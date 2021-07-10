@@ -315,9 +315,9 @@
 				TargetAttributes = {
 					078012E81D1E57730093DE24 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = JDPG69R49Z;
+						DevelopmentTeam = 64T4PJ8WCZ;
 						LastSwiftMigration = 1020;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -464,7 +464,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "for f in $(find $CODESIGNING_FOLDER_PATH -name 'AgoraRtcKit.framework')\ndo\necho \"$f\"\ncodesign --force --sign \"${CODE_SIGN_IDENTITY}\" \"$f\"\ndone\n";
+			shellScript = "#for f in $(find $CODESIGNING_FOLDER_PATH -name 'AgoraRtcKit.framework')\n#do\n#echo \"$f\"\n#codesign --force --sign \"${CODE_SIGN_IDENTITY}\" \"$f\"\n#done\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -646,11 +646,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = JDPG69R49Z;
+				DEVELOPMENT_TEAM = 64T4PJ8WCZ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -666,7 +666,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.agora.OpenLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = AgoraLab2020;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = ../../libs;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -682,11 +682,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = JDPG69R49Z;
+				DEVELOPMENT_TEAM = 64T4PJ8WCZ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -702,7 +702,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.agora.OpenLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = AgoraLab2020;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = ../../libs;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
